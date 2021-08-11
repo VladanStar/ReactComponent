@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>React Components 09</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="text/babel">
+
+     const Lust=()=>{
+         return(
+             <vladan>
+                <p>{new Date().toDateString()}</p>
+             <a href="https://kendralust.com/">
+               <img src="https://kendralust.com/wp-content/uploads/2020/09/8-x10-1-684x684.gif" alt="Kendra Lust"/>  
+                 </a>
+                 </vladan>
+         )
+     }
+    // const Header =()=>{
+    //     return(
+    //         <header>
+    //             <Lust/>
+    //             <h1>Kendra Lust</h1>
+    //         </header>
+    //     )
+    //     }
+    //     ReactDOM.render(<Header/>,document.getElementById("app"));
+    class Header extends React.Component{
+        render(){
+            return(
+                <header>
+                    <Lust/>
+                <h1>Vladan Cupric</h1>
+                <p>{Math.floor(Math.random()*(200-100)+100)}</p>    
+                </header>
+            )
+        }
+    }
+    ReactDOM.render(<Header/>,document.getElementById("app"));
+
+    </script>
+    
+</body>
+</html>

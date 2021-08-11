@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>React Components 10</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+       const Phoenix = () => {
+         return (
+           <a href="http://www.phoenixmarie.com/">
+             <img
+               src="http://www.phoenixmarie.com/images/imgTopPhoenixMarie.jpg"
+               alt=""
+             />
+             <p>{new Date().toString()}</p>
+           </a>
+         );
+       };
+
+    //   const Header = () => {
+    //     return (
+    //       <header>
+    //         <Phoenix />
+    //         <h1>Phoenix Marie</h1>
+    //       </header>
+    //     );
+    //   };
+    //   ReactDOM.render(<Header />, document.getElementById("app"));
+
+    class Header extends React.Component {
+        render(){
+            return(
+                <vladan>
+                    <Phoenix/>
+                <h1>Vladan Cupric {Math.floor(Math.random()*(200-100) +100)}</h1>    
+                </vladan>
+            )
+        }
+    }
+    ReactDOM.render(<Header/>,document.getElementById("app"));
+    </script>
+  </body>
+</html>
